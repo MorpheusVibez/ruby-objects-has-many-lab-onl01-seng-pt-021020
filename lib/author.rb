@@ -15,9 +15,9 @@ class Author
     post.author = self
   end
 
-  def add_post_by_title(title)
-      title = Post.new(title)
-      add_post(title)
+  def add_post_by_title(name)
+      name = Post.new(name)
+      add_post(name)
       binding.pry
   end
 end
