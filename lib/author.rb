@@ -23,4 +23,8 @@ class Author
       add_post(title)
       # binding.pry
   end
+
+  def self.post_count
+    @@post_count
+  end
 end
