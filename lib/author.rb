@@ -4,7 +4,7 @@ class Author
 
   def initialize(name)
     @name = name
-    @title = title
+    
   end
 
   def posts
