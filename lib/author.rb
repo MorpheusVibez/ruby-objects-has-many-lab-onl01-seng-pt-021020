@@ -1,6 +1,7 @@
 # require "pry"
 class Author
   attr_accessor :name
+  @@post_count = 0
 
   def initialize(name)
     @name = name
@@ -12,11 +13,12 @@ class Author
   end
 
   def add_post(post)
-      # @@song_count += 1
+      @@post_count += 1
     post.author = self
   end
 
   def add_post_by_title(title)
+      @@post_count += 1
       title = Post.new(title)
       add_post(title)
       # binding.pry
