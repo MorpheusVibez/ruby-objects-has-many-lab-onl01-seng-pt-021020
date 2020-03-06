@@ -1,10 +1,10 @@
-require "pry"
+# require "pry"
 class Author
   attr_accessor :name
 
   def initialize(name)
     @name = name
-    
+
   end
 
   def posts
@@ -19,6 +19,6 @@ class Author
   def add_post_by_title(name)
       name = Post.new(name)
       add_post(title)
-      binding.pry
+      # binding.pry
   end
 end
